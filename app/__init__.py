@@ -18,8 +18,8 @@ def home():
         first = request.form.get("first")
         second = request.form.get("second")
         url = (
-            f"https://ai.github.com/search/users?q"
-            f"=location:{first}+language{second}"
+            "https://api.github.com/"
+            f"search/users?q=location:{first}+language:{second}"
         )
         response_dict = requests.get(url).json()
         return jsonify(response_dict)

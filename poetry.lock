@@ -533,6 +533,17 @@ version = "0.4.4"
 pytest = ">=3.5.0"
 
 [[package]]
+category = "main"
+description = "Add .env support to your django/flask apps in development and deployments"
+name = "python-dotenv"
+optional = false
+python-versions = "*"
+version = "0.14.0"
+
+[package.extras]
+cli = ["click (>=5.0)"]
+
+[[package]]
 category = "dev"
 description = "YAML parser and emitter for Python"
 name = "pyyaml"
@@ -686,7 +697,7 @@ dev = ["pytest", "pytest-timeout", "coverage", "tox", "sphinx", "pallets-sphinx-
 watchdog = ["watchdog"]
 
 [metadata]
-content-hash = "6a0205c4c8ac9047c826edb8d07478767e2eab7a3c1ac9205bdb1f11b1c956b4"
+content-hash = "42842ab688ea4d6a58457ffd3d8a04aa37000c3d1b773be4b414c1e147ef2ecf"
 lock-version = "1.0"
 python-versions = "^3.8"
 
@@ -942,6 +953,10 @@ pytest-metadata = [
 ]
 pytest-picked = [
     {file = "pytest-picked-0.4.4.tar.gz", hash = "sha256:1c7c070d622403e109d2e8cd8054e44c117065b5ab79dc39cb5697ffd867309f"},
+]
+python-dotenv = [
+    {file = "python-dotenv-0.14.0.tar.gz", hash = "sha256:8c10c99a1b25d9a68058a1ad6f90381a62ba68230ca93966882a4dbc3bc9c33d"},
+    {file = "python_dotenv-0.14.0-py2.py3-none-any.whl", hash = "sha256:c10863aee750ad720f4f43436565e4c1698798d763b63234fb5021b6c616e423"},
 ]
 pyyaml = [
     {file = "PyYAML-5.3.1-cp27-cp27m-win32.whl", hash = "sha256:74809a57b329d6cc0fdccee6318f44b9b8649961fa73144a98735b0aaf029f1f"},
